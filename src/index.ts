@@ -6,6 +6,7 @@ import { EmberPlusState } from './state'
 import { EmberClient } from 'node-emberplus/lib/client/ember-client' // note - emberplus-conn is in parent repo, not sure if it needs to be defined as dependency
 import { GetVariablesList } from './variables'
 import { TreeNode } from 'node-emberplus/lib/common/tree-node'
+import { throttle } from 'es-toolkit'
 
 /**
  * Companion instance class for generic EmBER+ Devices
@@ -64,7 +65,7 @@ class EmberPlusInstance extends InstanceBase<EmberPlusConfig> {
 	private updateCompanionBits(): void {
 		this.setActionDefinitions(GetActionsList(this, this.client, this.config))
 		this.setFeedbackDefinitions(GetFeedbacksList(this, this.client, this.config))
-		this.setVariableDefinitions(GetVariablesList(this.config))
+		this.throttledSetVariableDefinitions()
 	}
 
 	private get client(): EmberClient {
@@ -242,10 +243,14 @@ class EmberPlusInstance extends InstanceBase<EmberPlusConfig> {
 		}
 	}
 
+	private throttledSetVariableDefinitions = throttle(() => {
+		this.setVariableDefinitions(GetVariablesList(this.config))
+	}, 1000)
+
 	private async _addMonitoredParameter(paramNode: TreeNode, label: string) {
 		this.config.monitoredParameters!.push({ id: paramNode.getJSONContent()['path'] ?? '', label: label })
 
-		this.setVariableDefinitions(GetVariablesList(this.config))
+		this.throttledSetVariableDefinitions()
 
 		paramNode.getDirectory((node) => {
 			this.handleChangedValue(label, node).catch((e) => this.log('error', 'Error handling parameter ' + e))
