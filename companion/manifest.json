@@ -3,10 +3,10 @@
   "name": "stagetec-emberplus-nxct",
   "shortname": "Ember+ NEXUS compact",
   "description": "STAGETEC Official Ember+ module specific to NEXUS compact for Companion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
-  "repository": "git+https://github.com/",
-  "bugs": "https://github.com/",
+  "repository": "git+https://github.com/bitfocus/companion-module-stagetec-emberplus-nxct",
+  "bugs": "https://github.com/bitfocus/companion-module-stagetec-emberplus-nxct/issues",
   "maintainers": [
     {
       "name": "Christian Stachowitz",

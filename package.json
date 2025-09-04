@@ -1,6 +1,6 @@
 {
 	"name": "stagetec-emberplus-nxct",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "dist/index.js",
 	"scripts": {
 		"prepare": "husky",
@@ -28,12 +28,10 @@
 	"dependencies": {
 		"@companion-module/base": "~1.12.1",
 		"es-toolkit": "^1.39.10",
-		"jquery": "^3.7.1",
 		"node-emberplus": "^3.0.8"
 	},
 	"devDependencies": {
 		"@companion-module/tools": "^2.3.0",
-		"@types/jquery": "^3.5.33",
 		"@types/node": "^22.18.0",
 		"eslint": "^9.34.0",
 		"husky": "^9.1.7",

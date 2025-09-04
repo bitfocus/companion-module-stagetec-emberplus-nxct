@@ -351,15 +351,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jquery@npm:^3.5.33":
-  version: 3.5.33
-  resolution: "@types/jquery@npm:3.5.33"
-  dependencies:
-    "@types/sizzle": "npm:*"
-  checksum: 10c0/d96c42762b7370ddf3b81cdad436a79d275e0ff09e2f4d7fbf2bbd8f97acef4110a11f1c3cb683195a1eba4fd9959e59d73f84d56ce2c010907a2bea696eb057
-  languageName: node
-  linkType: hard
-
 "@types/json-schema@npm:*, @types/json-schema@npm:^7.0.9":
   version: 7.0.11
   resolution: "@types/json-schema@npm:7.0.11"
@@ -410,13 +401,6 @@ __metadata:
   dependencies:
     "@types/node": "npm:*"
   checksum: 10c0/b762c5ae89085d9d9399ca4cf76d389fbb65d89a8a1d1b5805a17334d61a3027e6f42f4862e9dd16404ccb93380c9a43576839db3b6a244dcace6ada7367c706
-  languageName: node
-  linkType: hard
-
-"@types/sizzle@npm:*":
-  version: 2.3.8
-  resolution: "@types/sizzle@npm:2.3.8"
-  checksum: 10c0/ab5460147ae6680cc20c2223a8f17d9f7c97144b70f00a222a1c32d68b5207696d48177ab9784dda88c74d93ed5a78dd31f74d271b15382520b423c81b4aac89
   languageName: node
   linkType: hard
 
@@ -1967,13 +1951,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jquery@npm:^3.7.1":
-  version: 3.7.1
-  resolution: "jquery@npm:3.7.1"
-  checksum: 10c0/808cfbfb758438560224bf26e17fcd5afc7419170230c810dd11f5c1792e2263e2970cca8d659eb84fcd9acc301edb6d310096e450277d54be4f57071b0c82d9
-  languageName: node
-  linkType: hard
-
 "js-yaml@npm:^4.1.0":
   version: 4.1.0
   resolution: "js-yaml@npm:4.1.0"
@@ -2864,12 +2841,10 @@ __metadata:
   dependencies:
     "@companion-module/base": "npm:~1.12.1"
     "@companion-module/tools": "npm:^2.3.0"
-    "@types/jquery": "npm:^3.5.33"
     "@types/node": "npm:^22.18.0"
     es-toolkit: "npm:^1.39.10"
     eslint: "npm:^9.34.0"
     husky: "npm:^9.1.7"
-    jquery: "npm:^3.7.1"
     lint-staged: "npm:^16.1.6"
     node-emberplus: "npm:^3.0.8"
     prettier: "npm:^3.6.2"

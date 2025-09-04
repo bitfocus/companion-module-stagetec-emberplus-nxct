@@ -17,11 +17,16 @@ Credits to the developers of the generic Ember+ module for the basis (https://gi
  * Initial version
  * Only tested with the following Ember+ trees: Nexus Compact, Nexus Modular (standard)
  
- ### 0.9.5 BETA 
+### 0.9.5 BETA 
  * NXCT Version definitions
  * Only tested with the following Ember+ trees: Nexus Compact
  * Selection of interface controls gives access to Parameters and control actions
  
- ### 1.0.0
+### 1.0.0
  * official Release
+
+### 1.0.1
+ * proper links to GitHub Repo added to manifest.json
+ * dependency cleanup
+ * init improvement
   
